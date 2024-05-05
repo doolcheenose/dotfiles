@@ -1,0 +1,7 @@
+autoload -Uz compinit && compinit
+
+autoload -U colors && colors
+source ~/.git-prompt.sh
+setopt PROMPT_SUBST ; PS1='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[blue]%}%c%{$reset_color%}%{$fg[green]%}$(__git_ps1 " (%s)")%{$reset_color%}\$ '
+
+alias ll="ls -lah --color=auto"
