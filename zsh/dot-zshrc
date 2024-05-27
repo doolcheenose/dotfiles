@@ -5,3 +5,11 @@ source ~/.git-prompt.sh
 setopt PROMPT_SUBST ; PS1='%{$fg[green]%}%n@%m%{$reset_color%} %{$fg[blue]%}%c%{$reset_color%}%{$fg[green]%}$(__git_ps1 " (%s)")%{$reset_color%}\$ '
 
 alias ll="ls -lah --color=auto"
+
+# poetry
+export PATH="/Users/iandulchinos/.local/bin:$PATH"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
