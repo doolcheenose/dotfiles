@@ -33,6 +33,10 @@ require('ibl').setup {
   indent = {
     char = '┊',
   },
+  scope = {
+    show_end = false,
+    show_start = false,
+  },
 }
 
 -- Gitsigns

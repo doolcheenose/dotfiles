@@ -52,7 +52,7 @@ local servers = {
   pyright = {
     python = {
       analysis = {
-        typeCheckingMode = "on", -- Turning off for now, was super noisy.
+        typeCheckingMode = "on",
       },
     },
   },
@@ -62,6 +62,27 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  ansiblels = {
+    ansible = {
+      path = "ansible"
+    },
+    executionEnvironment = {
+      enabled = false
+    },
+    python = {
+      interpreterPath = "python"
+    },
+    validation = {
+      enabled = true,
+      lint = {
+        enabled = true,
+        path = "ansible-lint"
+      }
+    }
+  },
+  groovyls = {},
+  docker_compose_language_service = {},
+  robotframework_ls = { },
 }
 
 -- Setup neovim lua configuration
