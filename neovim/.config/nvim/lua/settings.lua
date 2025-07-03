@@ -36,9 +36,6 @@ vim.o.splitright = true -- Always split to the right
 
 vim.g.netrw_liststyle = 3 -- Tree mode
 vim.g.netrw_winsize = 25 -- Smaller default window
--- Set colorscheme
-vim.o.termguicolors = true
-vim.cmd [[colorscheme tokyonight-storm]]
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -46,3 +43,14 @@ vim.o.completeopt = 'menuone,noselect'
 -- Allow sharing registers between instances of neovim (and copy/paste)
 -- Need to enable it in nvim binary first
 vim.o.clipboard = 'unnamedplus'
+
+-- [[ Highlight on yank ]]
+-- See `:help vim.highlight.on_yank()`
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+  group = highlight_group,
+  pattern = '*',
+})
