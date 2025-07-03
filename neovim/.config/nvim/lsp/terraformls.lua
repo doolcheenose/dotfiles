@@ -1,10 +1,10 @@
 return {
-    cmd = { "terraform-ls", "serve" },
-    filetypes = { "terraform", "terraform-vars" },
-    root_markers = {
-        ".terraform",
-        ".git",
-    },
-    telemetry = { enabled = false },
-    settings = { },
+  cmd = { "terraform-ls", "serve" },
+  filetypes = { "terraform", "terraform-vars" },
+  root_markers = {
+    ".terraform",
+    ".git",
+  },
+  telemetry = { enabled = false },
+  settings = {},
 }

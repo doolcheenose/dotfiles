@@ -10,8 +10,8 @@ return {
       },
       signatureHelp = { enabled = true },
       diagnostics = {
-                globals = { "vim" },
-            }
+        globals = { "vim" },
+      },
     },
   },
 }
