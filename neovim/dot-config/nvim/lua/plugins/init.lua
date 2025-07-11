@@ -50,6 +50,9 @@ return {
   -- Automatically detect tab width
   "tpope/vim-sleuth",
 
+  -- Copilot, uncomment for work
+  -- "github/copilot.vim"
+
   -- Add indentation guides even on blank lines
   {
     "lukas-reineke/indent-blankline.nvim",
