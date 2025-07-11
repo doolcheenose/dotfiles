@@ -7,7 +7,7 @@ return {
     config = function()
       -- Load colorscheme on startup
       vim.o.termguicolors = true
-      vim.cmd([[colorscheme tokyonight-storm]])
+      vim.cmd([[colorscheme tokyonight-night]])
     end,
   },
 
