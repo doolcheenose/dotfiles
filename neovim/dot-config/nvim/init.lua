@@ -8,4 +8,5 @@ vim.lsp.enable({
   "ansiblels",
   "docker_compose_language_service",
   "terraformls",
+  "clangd",
 })

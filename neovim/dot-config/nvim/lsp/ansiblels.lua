@@ -1,6 +1,6 @@
 return {
   cmd = { "ansible-language-server", "--stdio" },
-  filetypes = { "yaml.ansible" },
+  filetypes = { "yaml" },
   root_markers = {
     "ansible.cfg",
     ".ansible-lint",
